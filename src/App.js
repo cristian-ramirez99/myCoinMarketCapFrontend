@@ -5,10 +5,12 @@ import Dashboard from './pages/dashboard/dashboard';
 
 function App() {
   return (
-    <div>
-      <Header></Header>
-      <Dashboard></Dashboard>
-    <Footer></Footer>
+    <div id='page-container'>
+      <div id='content-wrap'>
+        <Header></Header>
+        <Dashboard></Dashboard>
+      </div>
+      <Footer id='footer'></Footer>
     </div>
   );
 }

@@ -33,7 +33,7 @@ function Header() {
                 Spotlight
               </a>
               <a className={classes.subItem} href='/'>
-                <img alt="" src='              https://s2.coinmarketcap.com/static/cloud/img/menu/MenuGainersLosersIcon.svg'></img>
+                <img alt="" src='https://s2.coinmarketcap.com/static/cloud/img/menu/MenuGainersLosersIcon.svg'></img>
                 Gainers & Losers
               </a>
               <a className={classes.subItem} href='/'>
@@ -115,7 +115,7 @@ function Header() {
                 Spotlight
               </a>
               <a className={classes.subItem} href='/'>
-                <img alt="" src='              https://s2.coinmarketcap.com/static/cloud/img/menu/MenuGainersLosersIcon.svg'></img>
+                <img alt="" src='https://s2.coinmarketcap.com/static/cloud/img/menu/MenuGainersLosersIcon.svg'></img>
                 Gainers & Losers
               </a>
               <a className={classes.subItem} href='/'>
@@ -134,15 +134,26 @@ function Header() {
             <a href='/'>
               <img className={classes.diamond} alt="diamonds" src="https://s2.coinmarketcap.com/static/cloud/img/loyalty-program/diamond-icon.svg"></img>
             </a>
+            <div className={classes.diamondContent}>
+              <div className={classes.diamondContentImage}>
+                <img className={classes.imgUser} alt='user' src="https://s3.coinmarketcap.com/static/img/portraits/61359449293ccc2c4bcf07c7.png"></img>
+              </div>
+              <div className={classes.diamondContentText}>
+                <h5>CoinMarketCap Diamonds</h5>
+                <p className='text-muted'>Earn CoinMarketCap rewards by completing various tasks on the CoinMarketCap website</p>
+              </div>
+            </div>
           </div>
         </div>
         <div className={classes.div1}>
-          <div className={classes.div2}>
-            <i className="fas fa-lg fa-bell"></i>
+          <div className={classes.div3}>
+            <i className="fas fa-lg fa-bell cursor"></i>
           </div>
         </div>
         <div className={classes.div1}>
-          <img className={classes.imgUser} alt='user' src="https://s3.coinmarketcap.com/static/img/portraits/61359449293ccc2c4bcf07c7.png"></img>
+          <div className={classes.div4}>
+            <img className={classes.imgUser} alt='user' src="https://s3.coinmarketcap.com/static/img/portraits/61359449293ccc2c4bcf07c7.png"></img>
+          </div>
         </div>
         <div className={classes.wrapperSearch}>
           <input type='text' placeholder='Search'></input>
