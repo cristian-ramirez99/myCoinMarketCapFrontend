@@ -1,4 +1,5 @@
 import classes from './top3.module.css'
+import Percentage from '../../utils/percentage';
 
 function Top3() {
 
@@ -19,9 +20,9 @@ function Top3() {
                                 <p><span className={classes.idNumber}>3</span> Optimism<span className={classes.textMuted}>OP</span></p>
                             </div>
                             <div>
-                                <p className={classes.negativePercentage}><i className={`${classes.iconCaret} fas fa-caret-down`}></i>5.16 %</p>
-                                <p className={classes.positivePercentage}><i className={`${classes.iconCaret} fas fa-caret-down`}></i>3.66 %</p>
-                                <p className={classes.negativePercentage}><i className={`${classes.iconCaret} fas fa-caret-down`}></i>11.54 %</p>
+                                <Percentage value="5.16"></Percentage>
+                                <Percentage value="3.66"></Percentage>
+                                <Percentage value="11.54"></Percentage>
                             </div>
                         </div>
                     </div>
@@ -40,9 +41,9 @@ function Top3() {
                                 <p><span className={classes.idNumber}>3</span> Optimism<span className={classes.textMuted}>OP</span></p>
                             </div>
                             <div>
-                                <p className={classes.negativePercentage}><i className={`${classes.iconCaret} fas fa-caret-down`}></i>5.16 %</p>
-                                <p className={classes.positivePercentage}><i className={`${classes.iconCaret} fas fa-caret-down`}></i>3.66 %</p>
-                                <p className={classes.negativePercentage}><i className={`${classes.iconCaret} fas fa-caret-down`}></i>11.54 %</p>
+                                <Percentage value="5.16"></Percentage>
+                                <Percentage value="3.66"></Percentage>
+                                <Percentage value="11.54"></Percentage>
                             </div>
                         </div>
                     </div>
@@ -61,9 +62,9 @@ function Top3() {
                                 <p><span className={classes.idNumber}>3</span> Optimism<span className={classes.textMuted}>OP</span></p>
                             </div>
                             <div>
-                                <p className={classes.negativePercentage}><i className={`${classes.iconCaret} fas fa-caret-down`}></i>5.16 %</p>
-                                <p className={classes.positivePercentage}><i className={`${classes.iconCaret} fas fa-caret-down`}></i>3.66 %</p>
-                                <p className={classes.negativePercentage}><i className={`${classes.iconCaret} fas fa-caret-down`}></i>11.54 %</p>
+                                <Percentage value="5.16"></Percentage>
+                                <Percentage value="3.66"></Percentage>
+                                <Percentage value="11.54"></Percentage>
                             </div>
                         </div>
                     </div>

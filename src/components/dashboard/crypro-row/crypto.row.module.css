@@ -1,0 +1,73 @@
+
+
+.imgCrypto {
+    position: relative;
+    width: 34px;
+    transform: translate(-30%,30%);
+}
+
+.star{
+    padding: 10px;
+    font-size: 16px;
+}
+
+tr > td{
+    font-weight: 500;
+}
+
+
+.starChecked {
+    color: orange;
+    cursor: pointer;
+}
+
+.wrapperProgressBar {
+    position: relative;
+    float: right;
+    background-color: rgb(220, 220, 220);
+    width: 70%;
+    height: 8px;
+    border-radius: 8px;
+}
+
+.wrapperProgressBarInner {
+    position: absolute;
+    float: left;
+    background-color: rgb(220, 220, 220);
+    width: 70%;
+    height: 8px;
+    border-radius: 8px;
+}
+
+
+.cryptoLast24h {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    color: #6c757d !important;
+}
+
+.wrapperImg {
+    display: inline-block;
+    padding: 12px;
+    margin-bottom: 14px;
+}
+
+.symbolPadding{
+    padding: 10px;
+}
+
+.textAlignLeft{
+    text-align: left;
+}
+
+.rectLine {
+    position: absolute;
+    border: 1px solid rgb(233, 233, 233);
+    width: 84%;
+}
+
+.wrapperChartLine{
+    position: relative;
+
+}

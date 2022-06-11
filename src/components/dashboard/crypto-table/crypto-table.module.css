@@ -19,13 +19,9 @@ tr>td {
     font-weight: 600;
 }
 
-.starChecked {
-    color: orange;
-    cursor: pointer;
-}
 
 tbody>tr>td {
-    padding: 32px 10px 32px 10px;
+    padding: 16px 10px 16px 10px;
 }
 
 th {
@@ -44,11 +40,11 @@ th:nth-child(1) {
 
 }
 
-th:nth-child(2){
+th:nth-child(2) {
     text-align: left;
 }
 
-th:nth-child(3){
+th:nth-child(3) {
     text-align: left;
 
 }
@@ -57,20 +53,12 @@ td:nth-child(1) {
     text-align: left;
 }
 
-td:nth-child(2){
+td:nth-child(2) {
     text-align: left;
 }
 
-td:nth-child(3){
+td:nth-child(3) {
     text-align: left;
-
-}
-
-
-.imgCrypto {
-    position: relative;
-    width: 29px;
-    margin: 0px;
 
 }
 
@@ -89,8 +77,9 @@ tbody>tr>td:first-child {
     margin-left: 10px;
 }
 
-.rectLine{
+.rectLine {
     position: absolute;
     border: 1px solid rgb(233, 233, 233);
     width: 84%;
 }
+

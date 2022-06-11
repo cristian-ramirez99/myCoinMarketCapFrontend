@@ -1,0 +1,86 @@
+.wrapperProgressBar {
+    position: relative;
+    float: right;
+    background-color: rgb(220, 220, 220);
+    width: 70%;
+    height: 8px;
+    border-radius: 8px;
+}
+
+.wrapperProgressBarInner {
+    position: absolute;
+    float: left;
+    background-color: rgb(220, 220, 220);
+    width: 70%;
+    height: 8px;
+    border-radius: 8px;
+}
+
+
+#progressBar {
+    background-color: rgb(200, 200, 200);
+    height: 8px;
+    border-radius: 8px;
+}
+
+.progressBarContent {
+    display: none;
+    position: absolute;
+    top: 50%;
+    border-radius: 10px;
+    padding: 10%;
+    background-color: #fff;
+    z-index: 2;
+    margin-top: 20px;
+    width: 450px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+}
+
+.wrapperProgressBar:hover .progressBarContent {
+    display: block;
+    background-color: #fff;
+}
+
+.wrapperProgressBar:hover .arrowUp {
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgb(255, 255, 255);
+    left: 50%;
+    margin-top: 14px;
+    transform: translate(-50%,0);
+    z-index: 999;
+}
+
+.floatRight{
+    float: right;
+}
+
+.wrapperContent{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.textAlignLeft{
+    text-align: left;
+}
+
+.progressBarContent  p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #4b4444;
+    padding: 1px;
+    margin: 0;
+}
+
+.marginTop1{
+    margin-top: 5px;
+}
+
+.marginTop2{
+    margin-top: 20px;
+}
+

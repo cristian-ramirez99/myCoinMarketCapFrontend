@@ -1,25 +1,18 @@
 import { useEffect, useState } from 'react';
 import classes from './crypto-table.module.css'
 import { getCryptoList } from '../../../services/crypto-list/cripto-list'
-import { Crypto, CryptoList } from '../../../models/crypto-list.model';
-import { numberToFixed } from '../../../utils/numberToFixed';
+import CryptoRow from '../crypro-row/crypto-row';
 
 function CryptoTable() {
     const [cryptoList, setCryptoList] = useState([]);
-    const [starCheked, setStarChecked] = useState(false);
 
     useEffect(() => {
         callAPI();
-        console.log('fire')
     }, []);
-
-    const setStar = event => {
-        event.currentTarget.classList.add(classes.starChecked);
-    }
 
 
     const callAPI = () => {
-        const list = getCryptoList().then(response => {
+        getCryptoList().then(response => {
             const cryptoList = response.data.cryptoList
             setCryptoList(cryptoList);
         }).catch(e => {
@@ -50,26 +43,17 @@ function CryptoTable() {
                 </thead>
                 <tbody>
                     {
-                        cryptoList.map(crypto => (
-                            <tr>
-                                <td onClick={setStar} className={`fa fa-star cursor`} ></td>
-                                <td>{crypto.cmc_rank}</td>
-                                <td className={classes.fw600}>
-                                    <img className={classes.imgCrypto} alt={crypto.name} src='https://s2.coinmarketcap.com/static/img/coins/64x64/1.png'></img>
-                                    {cryptoList.name}
-                                    <span className='text-muted' >
-                                        BTC
-                                    </span>
-                                </td>
-                                <td className={classes.fw600}>${numberToFixed(crypto.quote.USD.price)}</td>
-                                <td>{numberToFixed(crypto.quote.USD.percent_change_24h, 2)}</td>
-                                <td>{numberToFixed(crypto.quote.USD.percent_change_7d, 2)}</td>
-                                <td>{numberToFixed(crypto.quote.USD.market_cap, 2)}</td>
-                                <td>{numberToFixed(crypto.quote.USD.volume_change_24h, 2)}</td>
-                                <td>{numberToFixed(crypto.max_supply, 2)}Slide</td>
-                                <td>Grafico...</td>
-                                <td ><i className="fas fa-ellipsis-v cursor"></i></td>
-                            </tr>
+                        cryptoList.map(({ id, cmc_rank, symbol, name, quote, circulating_supply, max_supply }) => (
+                            <CryptoRow
+                                key={id}
+                                id = {id}
+                                cmc_rank={cmc_rank}
+                                symbol={symbol}
+                                name={name}
+                                quote={quote}
+                                circulating_supply={circulating_supply}
+                                max_supply={max_supply}>
+                            </CryptoRow>
                         ))
                     }
                 </tbody>

@@ -4,6 +4,8 @@
     width: 100%;
     border-radius: 8px;
     margin-right: 25px;
+    box-shadow: 5px 10px 10px rgba(104, 116, 136, 0.5);
+    
 }
 
 .cardBody{
@@ -63,17 +65,6 @@
     justify-content: space-between;
 }
 
-.positivePercentage{
-    color: #16c784;
-}
-
-.negativePercentage{
-    color: #ea3943;
-}
-
-.iconCaret{
-    margin-right: 10px;
-}
 
 .wrapperCards{
     display: flex;

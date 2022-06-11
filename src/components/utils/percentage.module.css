@@ -1,0 +1,13 @@
+.positivePercentage{
+    color: #16c784;
+    font-weight: 600;
+}
+
+.negativePercentage{
+    color: #ea3943;
+    font-weight: 600;
+}
+
+.iconCaret{
+    margin-right: 10px;
+}
