@@ -2,17 +2,18 @@
 
 .imgCrypto {
     position: relative;
-    width: 34px;
-    transform: translate(-30%,30%);
+    width: 22px;
+    transform: translate(40%,24%);
 }
 
 .star{
     padding: 10px;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 tr > td{
     font-weight: 500;
+    padding: 5px 0 5px 0;
 }
 
 
@@ -43,7 +44,7 @@ tr > td{
 .cryptoLast24h {
     display: block;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 14px;
     color: #6c757d !important;
 }
 
@@ -55,6 +56,7 @@ tr > td{
 
 .symbolPadding{
     padding: 10px;
+    font-size: 16px;
 }
 
 .textAlignLeft{
@@ -70,4 +72,8 @@ tr > td{
 .wrapperChartLine{
     position: relative;
 
+}
+
+.percentage{
+    font-size: 12;
 }

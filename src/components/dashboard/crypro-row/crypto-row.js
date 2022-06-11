@@ -14,7 +14,7 @@ function CryptoRow({ id, cmc_rank, name, symbol, quote, circulating_supply, max_
         return quote.USD.volume_24h / quote.USD.price;
     }
 
-    //TODO: Graphic last 7days how can I do that?
+    //TODO: Graphic last 7days how can I do that?d
     //TODO: Don't render all the cryptos, render on scroll
     return (
         <>
@@ -37,11 +37,11 @@ function CryptoRow({ id, cmc_rank, name, symbol, quote, circulating_supply, max_
                     </span>
                 </td>
                 <td >${numberToFixed(quote.USD.price)}</td>
-                <td>
-                    <Percentage value={numberToFixed(quote.USD.percent_change_24h)}></Percentage>
+                <td className={classes.percentage}>
+                    <Percentage  value={numberToFixed(quote.USD.percent_change_24h)}></Percentage>
                 </td>
-                <td>
-                    <Percentage value={numberToFixed(quote.USD.percent_change_7d)}></Percentage>
+                <td className={classes.percentage}>
+                    <Percentage  value={numberToFixed(quote.USD.percent_change_7d)}></Percentage>
                 </td>
                 <td>${numberToFixed(quote.USD.market_cap)}</td>
                 <td>

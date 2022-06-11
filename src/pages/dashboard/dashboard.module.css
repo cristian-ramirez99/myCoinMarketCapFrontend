@@ -1,0 +1,13 @@
+.title{
+    font-size: 23px;
+    margin: 0;
+}
+
+.wrapper{
+    display: flex;
+}
+
+.wrapper > p{
+    font-size: 14px;
+    padding: 0 2.5px 0 2.5px;
+}

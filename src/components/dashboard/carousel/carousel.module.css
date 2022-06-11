@@ -1,0 +1,65 @@
+.wrapper {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-self: center;
+}
+
+.card {
+    width: 22%;
+    margin-right: 10px;
+}
+
+.card:nth-child(5) {
+    width: 11%;
+
+}
+
+.card:nth-child(5) img {
+    opacity: 0.5;
+}
+
+.imageBox {
+    height: 100px;
+    background-image: linear-gradient(to right, gold 30%, transparent 80%),
+                      url('https://s2.coinmarketcap.com/static/new-alerts/611521ecc3074e0013b0c4a9/img/1654755788223_290x136_optimized.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+  }
+
+.cardBody {
+    padding: 8px;
+}
+
+
+.cardBody img {
+    height: 16vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card>.cardBody h5 {
+    margin: 0;
+    font-size: 8;
+    font-weight: 600;
+}
+
+
+.card>.cardBody p {
+    margin: 0;
+    font-size: 8;
+    font-weight: 500;
+}
+
+.cardFooter {
+    padding: 10px 0 10px 0;
+}
+
+
+
+.iconArrow {
+    position: absolute;
+    margin: 3.5vw 0 0 10px;
+    cursor: pointer;
+}

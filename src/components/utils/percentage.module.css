@@ -9,5 +9,6 @@
 }
 
 .iconCaret{
-    margin-right: 10px;
+    margin-right: 4px;
+    transform: translateY(10%);
 }

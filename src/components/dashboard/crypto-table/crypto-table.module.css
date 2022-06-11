@@ -12,55 +12,31 @@ thead {
 }
 
 tr>td {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .fw600 {
     font-weight: 600;
 }
 
-
-tbody>tr>td {
-    padding: 16px 10px 16px 10px;
-}
-
 th {
-    padding: 10px;
+    padding: 0.75% 5px 0.75%  5px;
+    font-size: 13px;
+}
+
+
+
+th:nth-child(n+4){
     text-align: right;
+
 }
 
-
-td {
+td:nth-child(n+4) {
     text-align: right;
-}
-
-th:nth-child(1) {
-    text-align: left;
-    padding: 32px 0 44px 0;
 
 }
 
-th:nth-child(2) {
-    text-align: left;
-}
 
-th:nth-child(3) {
-    text-align: left;
-
-}
-
-td:nth-child(1) {
-    text-align: left;
-}
-
-td:nth-child(2) {
-    text-align: left;
-}
-
-td:nth-child(3) {
-    text-align: left;
-
-}
 
 
 tbody>tr>td:first-child {

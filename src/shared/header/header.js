@@ -1,14 +1,21 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import classes from './header.module.css';
+import treasure from '../../assets/images/treasure.png';
 
 function Header() {
   return (
     <header>
-      <div className={classes.wrapper}>
-        FIRST ROW
+      <div className={`${classes.wrapperGeneralInfo} text-muted`}>
+        <p>Cryptos: <a href='/'>19818</a></p>
+        <p>Exchanges: <a href='/'>526</a></p>
+        <p>Market Cap: <a href='/'>1170837093351</a></p>
+        <p>24h Vol: <a href='/'>70705850775</a></p>
+        <p>Dominance: <a href='/'>BTC 47% ETH 16%</a></p>
+        <p>ETH Gas: <a href='/'>27 Gwei</a></p>
       </div>
+      <div className={classes.rectLine}></div>
       <div className={classes.wrapper}>
-        <div>
+        <div className={classes.wrapperImg}>
           <img className={classes.imgCoinmarket} alt="Logo CoinMarketCap" src='https://s2.coinmarketcap.com/static/cloud/img/coinmarketcap_1.svg?_=92cd1e5'></img>
         </div>
         <nav className={classes.wrapper}>
@@ -136,7 +143,7 @@ function Header() {
             </a>
             <div className={classes.diamondContent}>
               <div className={classes.diamondContentImage}>
-                <img className={classes.imgUser} alt='user' src="https://s3.coinmarketcap.com/static/img/portraits/61359449293ccc2c4bcf07c7.png"></img>
+                <img className={classes.imgTreasure} alt='diamonds' src={treasure} ></img>
               </div>
               <div className={classes.diamondContentText}>
                 <h5>CoinMarketCap Diamonds</h5>
@@ -147,7 +154,7 @@ function Header() {
         </div>
         <div className={classes.div1}>
           <div className={classes.div3}>
-            <i className="fas fa-lg fa-bell cursor"></i>
+            <i className="fas fa-bell cursor"></i>
           </div>
         </div>
         <div className={classes.div1}>
@@ -156,6 +163,7 @@ function Header() {
           </div>
         </div>
         <div className={classes.wrapperSearch}>
+          <i className={`${classes.searchIcon} fa fa-search`} aria-hidden="true"></i>
           <input type='text' placeholder='Search'></input>
         </div>
       </div>
